@@ -11,7 +11,6 @@ public class Solution {
         int numberThree = 1;
         String string = "00";
 
-        int
         String result = numberTwo + string + numberOne + numberThree;
         System.out.println("Разгоняем Амиго на " + result + "%");
     }
