@@ -9,6 +9,14 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) {
         String militaryCommissar = ", явитесь в военкомат";
-        //напишите тут ваш код
+        Scanner console = new Scanner(System.in);
+        String str = console.nextLine();
+        int age = console.nextInt();
+        if (age >=18 && age <=28)
+       System.out.println(str + militaryCommissar);
+
+
+
+
     }
 }
