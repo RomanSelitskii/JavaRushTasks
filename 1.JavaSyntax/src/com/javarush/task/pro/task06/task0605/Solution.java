@@ -14,11 +14,10 @@ public class Solution {
     }
 
     public static void reverseArray(int[] array) {
-        //напишите тут ваш код
         for (int i = 0; i < array.length / 2; i++) {
             int temp = array[i];
-            array[i] = array[array.length - i - 1];
-            array[array.length - i ] = temp;
+            array[i] = array[array.length - 1 - i];
+            array[array.length - i - 1] = temp;
         }
     }
 
