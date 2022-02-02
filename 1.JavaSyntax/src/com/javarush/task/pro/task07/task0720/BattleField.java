@@ -15,16 +15,20 @@ public class BattleField {
     public static void main(String[] args) {
         GalavirXIII galavirXIII = new GalavirXIII();
         Nimrod nimrod = new Nimrod();
+
         do {
             System.out.println(galavirAttack);
             nimrod.defend(galavirXIII.attack());
 
-        } while (isNimrodAlive(nimrod));
-
-
-
-
+            if (isNimrodAlive(nimrod)) {
+                System.out.println(nimrodAttack);
+                galavirXIII.defend(nimrod.attack());
+            } else {
+                break;
+            }
+        } while (isGalavirAlive(galavirXIII));
     }
+
 
     public static boolean isNimrodAlive(Nimrod nimrod) {
         if (nimrod.health > 0) {

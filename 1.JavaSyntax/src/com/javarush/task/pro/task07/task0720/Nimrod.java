@@ -11,6 +11,12 @@ public class Nimrod {
     }
 
     public void defend(int b) {
-        health = health - b;
+        health = health - applyShield(b);
+        applyShield(b);
+
+    }
+
+    public byte applyShield(int a) {
+        return (byte) a;
     }
 }
