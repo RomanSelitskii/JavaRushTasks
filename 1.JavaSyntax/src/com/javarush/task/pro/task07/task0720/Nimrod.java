@@ -7,7 +7,7 @@ public class Nimrod {
     public int health = 1000000;
 
     public int attack() {
-        return rocket;
+        return angelicaKiss;
     }
 
     public void defend(int b) {
