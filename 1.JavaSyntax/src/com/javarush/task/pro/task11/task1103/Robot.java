@@ -8,11 +8,11 @@ public class Robot {
 
     public static int robotCounter;
 
-    public int id;
+    public static int id;
 
-    public String model;
+    public static String model;
 
-    public int productionYear;
+    public  static int productionYear;
 
     public static String vendor = "Javarush Co.";
 

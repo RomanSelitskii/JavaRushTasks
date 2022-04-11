@@ -9,12 +9,12 @@ public class Solution {
     }
 
     public static long cube(long a){
-        return a * a * a;
+        return ninthDegree(ninthDegree(a));
     }
 
 
-    public static long ninthDegree(long b){
-        return cube(cube(b));
+    public static long ninthDegree(long a){
+        return a*a*a;
 
     }
 }
