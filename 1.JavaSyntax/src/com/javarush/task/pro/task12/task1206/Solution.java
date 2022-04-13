@@ -16,12 +16,11 @@ public class Solution {
 
     public static int countDigits(String string) {
         int charcount = 0;
-        char temp;
+
 
         for (int i = 0; i < string.length(); i++) {
-            temp = string.charAt(i);
 
-            if (Character.isDigit(temp)) {
+            if (Character.isDigit(string.charAt(i))) {
                 charcount++;
             }
         }
