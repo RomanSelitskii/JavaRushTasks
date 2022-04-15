@@ -14,7 +14,7 @@ public class Solution {
         }
     }
     
-    public static String destroyDeadMan( String deadMan) {
+    public static String destroyDeadMan(String deadMan) {
         return deadMan + " был уничтожен";
     }
 }
